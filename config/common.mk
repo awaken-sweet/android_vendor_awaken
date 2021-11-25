@@ -216,6 +216,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     CustomPixelLauncherOverlay \
     DocumentsUIOverlay \
+    NavigationBarModeGesturalOverlayFS \
     NetworkStackOverlay
 
 include vendor/awaken/config/branding.mk
