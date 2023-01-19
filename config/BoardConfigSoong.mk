@@ -33,6 +33,8 @@ SOONG_CONFIG_awakenGlobalVars += \
     disable_bluetooth_le_read_buffer_size_v2 \
     disable_bluetooth_le_set_host_feature \
     gralloc_handle_has_reserved_size \
+    camera_needs_miui_camera_mode_support \
+    camera_needs_camera_needs_depth_sensor_override \
     target_init_vendor_lib \
     target_ld_shim_libs \
     target_surfaceflinger_udfps_lib \
@@ -62,6 +64,8 @@ SOONG_CONFIG_awakenGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLA
 SOONG_CONFIG_awakenNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_awakenQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_awakenQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
+SOONG_CONFIG_awakenGlobalVars_camera_needs_miui_camera_mode_support := $(TARGET_USES_MIUI_CAMERA)
+SOONG_CONFIG_awakenGlobalVars_camera_needs_camera_needs_depth_sensor_override := $(TARGET_USES_DEPTHSENSOR_OVERRIDE)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
